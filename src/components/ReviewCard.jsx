@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../styles/components/ReviewCard.scss';
 
-const ReviewCard = () => {
+const ReviewCard = ({ text }) => {
   return (
-    <div>ReviewCard</div>
-  )
-}
+    <div className="review-card">
+      <p>{text}</p>
+    </div>
+  );
+};
 
-export default ReviewCard
+export default ReviewCard;

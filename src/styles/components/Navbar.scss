@@ -1,29 +1,31 @@
-// Navbar.scss
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  // background: transparent;
+  color: #edededf6;
+
+
+  &__logo {
+    font-size: 1.5rem;
+  }
+
+  &__links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #3d58df67;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    // position: fixed;
-  
-    &__logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-  
-    &__links {
-      display: flex;
-      gap: 1rem;
-      list-style: none;
-  
-      li {
-        cursor: pointer;
-        &:hover {
-          color: #f00;
-        }
+    gap: 1rem;
+    list-style: none;
+
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      &:hover a {
+        color: #f00;
       }
     }
   }
-  
+}
